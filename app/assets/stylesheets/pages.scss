@@ -37,4 +37,27 @@ h1{
   width:40%;
   background:#C3270D;
   height:520px;
+  box-shadow:0 3px 7px rgba(0, 0, 0, 0.8);
+}
+
+.contentLeft{
+  float:left;
+  width:60%;
+  height:520px;
+}
+
+.contentBottomRight{
+  float:right;
+  width:40%;
+  height:520px;
+}
+
+.contentBottomLeft{
+  float:left;
+  width:60%;
+  height:520px;
+}
+
+.footer{
+  padding:15px;
 }
