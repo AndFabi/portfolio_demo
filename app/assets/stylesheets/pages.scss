@@ -2,11 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.navbar{
+  top:0;
+  width:100%;
+  background:#C3270D;
+  box-shadow:0 3px 7px rgba(0, 0, 0, 0.8);
+}
+
+
 h1{
   text-align:center;
   font-family:Aleo;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
   font-size:60px;
+  color:#fff;
+}
+
+h5{
+  text-align:center;
+  font-family:Aleo;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  // font-size:60px;
   color:#fff;
 }
 
@@ -21,7 +37,7 @@ h1{
   width:40%;
   background:#43484e;
   height:520px;
-  border-radius:450px;
+  border-radius:100%;
   box-shadow:0 3px 7px rgba(0, 0, 0, 0.8);
 
 }
@@ -30,6 +46,10 @@ h1{
   float:right;
   width:60%;
   height:520px;
+}
+
+.size{
+  height:400px;
 }
 
 .contentRight{

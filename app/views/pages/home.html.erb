@@ -1,3 +1,13 @@
+<div class="navbar">
+  <nav>
+    <ul>
+      <li><%= link_to "Welcome", root_path %></li>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Nice One", contact_path %></li>
+    </ul>
+  </nav>
+</div>
+
 <section class="center">
   <div>
     <h1>Hello</h1>
@@ -12,8 +22,8 @@
     </div>
 
     <div class="content">
-      <h1>Sexy graph</h1>
-        <div id="bar-chart" class="ct-chart">
+      <h5>Sexy graph</h5>
+        <div class="ct-chart size">
 
         </div>
     </div>
@@ -47,7 +57,24 @@
 <footer>
  <a href="" class="footer"><i class="fa fa-twitter fa-4x"></i></a>
  <a href="" class="footer"><i class="fa fa-linkedin fa-4x"></i></a>
+ <a href="" class="footer"><i class="fa fa-github fa-4x"></i></a>
 </footer>
 
-<script type="text/javascript"></script>
+
+<script type="text/javascript">
+
+  new Chartist.Pie('.ct-chart', {
+  series: [20, 10, 30, 40]
+}, {
+
+  donut: true,
+  donutWidth: 25,
+  chartPadding: 10,
+  labelOffset: 30,
+  labelDirection: 'explode'
+});
+
+
+
+</script>
 
