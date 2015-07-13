@@ -1,20 +1,23 @@
-<div class="navbar">
-  <nav>
-    <ul>
-      <li><%= link_to "Welcome", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Nice One", contact_path %></li>
-    </ul>
-  </nav>
-</div>
+
 
 <section class="center">
-  <div>
-    <h1>Hello</h1>
+
+  <div class="navbar">
+    <nav id="menu">
+
+        <%= link_to "Welcome", root_path, class: "menuEl" %>
+        <%= link_to "About", about_path, class: "menuEl" %>
+        <%= link_to "Nice One", contact_path, class: "menuEl" %>
+
+    </nav>
   </div>
+
+  <div class="welcome">
+    <h1>Hello</h1>
+
     <h4>You want me in your team?</h4>
-    <div class="form"><%= email_field("user", "address")%><%= submit_tag("Add me") %></div>
-  <div>
+    <div class="form"><%= email_field("user", "address")%><%= submit_tag("Want me in your team?") %>
+    </div>
 
   </div>
 
@@ -56,21 +59,22 @@
 
   </div>
 
-  <div class="resume">
+  <div class="expert">
      <h2>Experiences</h2>
 
-      <div class="testRight">
+      <div class="expRight">
         <%= image_tag "lewagon.png", {height: 150 } %>
-
+        <h4>The Smart Company</h4>
         </div>
 
-        <div class="testLeft">
+        <div class="expLeft">
         <%= image_tag "lewagon.png", {height: 150 } %>
+        <h4>Conexius</h4>
         </div>
 
-        <div class="testCenter">
+        <div class="expCenter">
         <%= image_tag "lewagon.png", {height: 150 } %>
-
+        <h4>Le wagon</h4>
         </div>
 
 
