@@ -12,20 +12,36 @@
   <div>
     <h1>Hello</h1>
   </div>
+    <h4>You want me in your team?</h4>
+    <div class="form"><%= email_field("user", "address")%><%= submit_tag("Add me") %></div>
+  <div>
+
+  </div>
 
 </section>
 
 <section>
   <div class="graph">
     <div class="header">
+      <div class="ct-chart size">
+
+      </div>
 
     </div>
 
     <div class="content">
-      <h5>Sexy graph</h5>
-        <div class="ct-chart size">
+      <h2>I work hard every day to be better!</h2>
+      <div class="colright">
+        <p>La transversalité des nouvelles technologies (usage des drones, Uber, RbnB, ...) nécessite une approche pluridisciplinaire. Comment les nouvelles technologies redistribuent les rapports de force au sein de la société ? Comment changent-elles nos comportements (exemples : voiture électrique, smartphone, gopro,…).</p>
+ 
+        <p>Coder c'est vivre dans son époque. Les robots, les voitures du futur, … sont déjà là. Si on ne peut pas comprendre leur fonctionnement on finit rapidement par vivre hors du monde et c'est là que les « grandes décisions » deviennent hors propos.</p>
 
-        </div>
+        <p>Etant passionné par ces thématiques, il était donc grand temps de me mettre au code!</p>
+
+        <p>Capacité à m'immerger de manière intensive dans la programmation. Venant d'un univers complètement différent et ne disposant d’aucune notion de programmation. Des exercices pratiques à la création de projets à partir de zéro avec pour unique objectif de délivrer dans les temps impartis.</p>
+
+      </div>
+
     </div>
   </div>
 
@@ -35,44 +51,107 @@
     </div>
 
     <div class="contentRight">
-      <h1>Over sexy spiral</h1>
+      <h1>What i can do</h1>
     </div>
 
   </div>
 
   <div class="resume">
-    <div class="contentBottomRight">
+     <h2>Experiences</h2>
 
-    </div>
+      <div class="testRight">
+        <%= image_tag "lewagon.png", {height: 150 } %>
 
-    <div class="contentBottomLeft">
+        </div>
 
-    </div>
+        <div class="testLeft">
+        <%= image_tag "lewagon.png", {height: 150 } %>
+        </div>
+
+        <div class="testCenter">
+        <%= image_tag "lewagon.png", {height: 150 } %>
+
+        </div>
+
+
+
+  <div class="testimony">
+    <h2>Recommandations</h2>
+
 
   </div>
 
 
 </section>
 
-<footer>
+<footer class="fot">
  <a href="" class="footer"><i class="fa fa-twitter fa-4x"></i></a>
  <a href="" class="footer"><i class="fa fa-linkedin fa-4x"></i></a>
  <a href="" class="footer"><i class="fa fa-github fa-4x"></i></a>
 </footer>
 
 
-<script type="text/javascript">
+<script>
 
-  new Chartist.Pie('.ct-chart', {
-  series: [20, 10, 30, 40]
-}, {
 
-  donut: true,
-  donutWidth: 25,
-  chartPadding: 10,
-  labelOffset: 30,
-  labelDirection: 'explode'
-});
+
+    var chart = new Chartist.Pie('.ct-chart', {
+    labels: ["open-mind", "perseverance", "perseverance", "maker's spirit"],
+    series: [20, 10, 30, 40]
+    },  {
+
+      donut: true,
+      donutWidth: 40,
+      chartPadding: 10,
+      labelOffset: 30,
+      labelDirection: 'explode'
+    });
+
+    chart.on('draw', function(data) {
+    if(data.type === 'slice') {
+      // Get the total path length in order to use for dash array animation
+      var pathLength = data.element._node.getTotalLength();
+
+      // Set a dasharray that matches the path length as prerequisite to animate dashoffset
+      data.element.attr({
+        'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+      });
+
+      // Create animation definition while also assigning an ID to the animation for later sync usage
+      var animationDefinition = {
+        'stroke-dashoffset': {
+          id: 'anim' + data.index,
+          dur: 1000,
+          from: -pathLength + 'px',
+          to:  '0px',
+          easing: Chartist.Svg.Easing.easeOutQuint,
+          // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
+          fill: 'freeze'
+        }
+      };
+    if(data.index !== 0) {
+      animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+    }
+
+    // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+    data.element.attr({
+      'stroke-dashoffset': -pathLength + 'px'
+    });
+
+    // We can't use guided mode as the animations need to rely on setting begin manually
+    // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
+    data.element.animate(animationDefinition, false);
+      }
+    });
+
+  // For the sake of the example we update the chart every time it's created with a delay of 8 seconds
+  chart.on('created', function() {
+    if(window.__anim21278907124) {
+      clearTimeout(window.__anim21278907124);
+      window.__anim21278907124 = null;
+    }
+
+  });
 
 
 
