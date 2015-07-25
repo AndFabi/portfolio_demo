@@ -13,18 +13,17 @@
   </div>
 
   <div class="welcome">
-    <h1>Hello</h1>
+    <h1> &lt; id : Andreacola Fabien &gt;</h1>
 
-    <h4>You want me in your team?</h4>
-    <div class="form"><%= email_field("user", "address")%><%= submit_tag("Want me in your team?") %>
+    <h4> &lt; J'aime coder, les nouvelles technologies et la réalisation de projets &gt; </h4>
+    <div class="form"><%= email_field_tag 'email', 'email@example.com', class: 'special_input', disabled: false %><%= submit_tag("Want me in your team?") %>
     </div>
 
   </div>
 
 </section>
 
-<section>
-  <div class="graph">
+<section class="pad">
     <div class="header">
       <div class="ct-chart size">
 
@@ -46,9 +45,11 @@
       </div>
 
     </div>
-  </div>
 
-  <div clas="spiral">
+</section>
+
+<section class="spiral">
+
     <div class="contentLeft">
 
     </div>
@@ -57,27 +58,60 @@
       <h1>What i can do</h1>
     </div>
 
+
+</section>
+
+<section class="resume">
+
+  <div>
+    <h1>Mon parcours</h1>
   </div>
 
-  <div class="expert">
-     <h2>Experiences</h2>
 
-      <div class="expRight">
-        <%= image_tag "lewagon.png", {height: 150 } %>
-        <h4>The Smart Company</h4>
-        </div>
-
-        <div class="expLeft">
-        <%= image_tag "lewagon.png", {height: 150 } %>
-        <h4>Conexius</h4>
-        </div>
-
-        <div class="expCenter">
-        <%= image_tag "lewagon.png", {height: 150 } %>
-        <h4>Le wagon</h4>
-        </div>
+  <div id="twoColumn" class="expert">
 
 
+    <ul>
+       <li class="all">
+        <h3>All</h3>
+      </li>
+      <li class="formation">
+        <h3>Formations</h3>
+      </li>
+      <li class="prof">
+        <h3>Expériences</h3>
+      </li>
+      <li>
+
+        <%= image_tag "tsc.jpg", class: "radius" %>
+
+      </li>
+      <li>
+
+        <%= image_tag "conexius.jpg", class: "radius" %>
+
+      </li>
+      <li>
+
+        <%= image_tag "lewagon.png", class: "radius" %>
+
+      </li>
+      <li>
+
+        <%= image_tag "lewagon.png", class: "radius" %>
+
+      </li>
+      <li>
+
+        <%= image_tag "lewagon.png", class: "radius" %>
+
+      </li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- <section>
 
   <div class="testimony">
     <h2>Recommandations</h2>
@@ -86,7 +120,7 @@
   </div>
 
 
-</section>
+</section> -->
 
 <footer class="fot">
  <a href="" class="footer"><i class="fa fa-twitter fa-4x"></i></a>

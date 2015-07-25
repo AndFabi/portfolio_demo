@@ -2,23 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+  background-color:#fff;
+}
+
 .navbar{
   position:fixed;
   width:100%;
   padding:10px;
-  background:#ffffff;
-  opacity:0.7;
-  // box-shadow:0 3px 7px rgba(0, 0, 0, 0.8);
+  text-align:end;
 }
 
 
-h1, h2{
-  margin:0;
+h1{
+  // text-transform:uppercase;
   text-align:center;
   font-family:Aleo;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
   font-size:45px;
   color:#fff;
+}
+
+h2{
+ font-family:Aleo;
+ text-align:center;
+ font-size:30px
 }
 
 h4{
@@ -42,14 +50,14 @@ h4{
 .center{
   top:0;
   width: 100%;
-  height:500px;
-  background-image:url("background");
+  height:975px;
+  background-color:#0d588f;
 }
 
 .welcome{
   position:absolute;
-  top:7em;
-  left:40%;
+  top:30%;
+  left:30%;
 }
 
 .form{
@@ -57,18 +65,24 @@ h4{
   padding:3px;
 }
 
-.header{
-  float:left;
-  width:40%;
-  background:#43484e;
+.pad{
+  width:100%;
   height:520px;
-  box-shadow:0 3px 7px rgba(0, 0, 0, 0.8);
+  // padding-bottom:50px;
+  // padding-top:50px;
+}
+
+.header{
+  background-color:#05de6f;
+  float:left;
+  width:50%;
+  height:520px;
 
 }
 
 .content{
   float:right;
-  width:60%;
+  width:50%;
   height:520px;
 }
 
@@ -84,33 +98,72 @@ h4{
   padding-top:50px;
 }
 
+.spiral{
+  width:100%;
+  height:520px;
+  // padding-bottom:50px;
+  // padding-top:50px;
+
+}
+
 .contentRight{
   float:right;
-  width:40%;
-  background:#C3270D;
+  width:50%;
   height:520px;
-  box-shadow:0 3px 7px rgba(0, 0, 0, 0.8);
 }
 
 .contentLeft{
+  background-color:#05de6f;
   float:left;
-  width:60%;
+  width:50%;
   height:520px;
 }
 
-.expRight{
-  float:right;
-  padding:1.5em;
+.resume{
+  width:100%;
+  height:700px;
+  padding-bottom:50px;
+  padding-top:50px;
 }
 
-.expLeft{
+.school{
   float:left;
-  padding:1.5em;
+  width:40%;
+  height:520px;
 }
 
-.expCenter{
-  text-align:center;
-  padding:1.5em;
+#twoColumn{
+  -moz-column-count: 2;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 10px;
+  column-count: 2;
+  column-gap: 10px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+// .expRight{
+//   float:right;
+//   padding:1.5em;
+// }
+
+// .expLeft{
+//   float:left;
+//   padding:1.5em;
+// }
+
+// .expCenter{
+//   text-align:center;
+//   padding:1.5em;
+// }
+
+.radius{
+  border-radius:50%;
+  height:150px;
+  width:150px;
 }
 
 .footer{
