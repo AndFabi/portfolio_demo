@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  background-color:#fff;
+
+
 }
 
 .navbar{
@@ -68,23 +69,10 @@ h4{
 .pad{
   width:100%;
   height:520px;
-  // padding-bottom:50px;
-  // padding-top:50px;
+  padding:50px 0px 50px 0px;
 }
 
-.header{
-  background-color:#05de6f;
-  float:left;
-  width:50%;
-  height:520px;
 
-}
-
-.content{
-  float:right;
-  width:50%;
-  height:520px;
-}
 
 .colright{
   padding:30px;
@@ -101,70 +89,37 @@ h4{
 .spiral{
   width:100%;
   height:520px;
-  // padding-bottom:50px;
-  // padding-top:50px;
+  padding:50px 0px 50px 0px;
 
 }
 
-.contentRight{
-  float:right;
-  width:50%;
-  height:520px;
-}
 
-.contentLeft{
-  background-color:#05de6f;
-  float:left;
-  width:50%;
-  height:520px;
+.compet{
+  height:500px;
+  width:650px;
+  margin-top:10px;
 }
 
 .resume{
   width:100%;
   height:700px;
-  padding-bottom:50px;
-  padding-top:50px;
+  padding:50px 0px 50px 0px;
 }
 
-.school{
+.columnL{
   float:left;
-  width:40%;
+  width:50%;
   height:520px;
-}
 
-#twoColumn{
-  -moz-column-count: 2;
-  -moz-column-gap: 10px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
-  column-count: 2;
-  column-gap: 10px;
-}
+ }
+
+
+
 
 ul{
   list-style-type: none;
 }
 
-// .expRight{
-//   float:right;
-//   padding:1.5em;
-// }
-
-// .expLeft{
-//   float:left;
-//   padding:1.5em;
-// }
-
-// .expCenter{
-//   text-align:center;
-//   padding:1.5em;
-// }
-
-.radius{
-  border-radius:50%;
-  height:150px;
-  width:150px;
-}
 
 .footer{
   padding:15px;

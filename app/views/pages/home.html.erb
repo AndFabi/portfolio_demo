@@ -16,7 +16,11 @@
     <h1> &lt; id : Andreacola Fabien &gt;</h1>
 
     <h4> &lt; J'aime coder, les nouvelles technologies et la réalisation de projets &gt; </h4>
-    <div class="form"><%= email_field_tag 'email', 'email@example.com', class: 'special_input', disabled: false %><%= submit_tag("Want me in your team?") %>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="@">
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="submit">Add me in your team!</button>
+      </span>
     </div>
 
   </div>
@@ -24,14 +28,14 @@
 </section>
 
 <section class="pad">
-    <div class="header">
+    <div class="col-lg-6">
       <div class="ct-chart size">
 
       </div>
 
     </div>
 
-    <div class="content">
+    <div class="col-lg-6">
       <h2>I work hard every day to be better!</h2>
       <div class="colright">
         <p>La transversalité des nouvelles technologies (usage des drones, Uber, RbnB, ...) nécessite une approche pluridisciplinaire. Comment les nouvelles technologies redistribuent les rapports de force au sein de la société ? Comment changent-elles nos comportements (exemples : voiture électrique, smartphone, gopro,…).</p>
@@ -50,12 +54,14 @@
 
 <section class="spiral">
 
-    <div class="contentLeft">
+    <div class="col-lg-6">
+      <h1>What i can do</h1>
 
     </div>
 
-    <div class="contentRight">
-      <h1>What i can do</h1>
+    <div class="col-lg-6">
+      <%= render "competences_svg" %>
+
     </div>
 
 
@@ -68,45 +74,20 @@
   </div>
 
 
-  <div id="twoColumn" class="expert">
+  <div class="columnL">
 
-
-    <ul>
-       <li class="all">
-        <h3>All</h3>
-      </li>
-      <li class="formation">
-        <h3>Formations</h3>
-      </li>
-      <li class="prof">
-        <h3>Expériences</h3>
-      </li>
-      <li>
-
-        <%= image_tag "tsc.jpg", class: "radius" %>
-
-      </li>
-      <li>
-
-        <%= image_tag "conexius.jpg", class: "radius" %>
-
-      </li>
-      <li>
-
-        <%= image_tag "lewagon.png", class: "radius" %>
-
-      </li>
-      <li>
-
-        <%= image_tag "lewagon.png", class: "radius" %>
-
-      </li>
-      <li>
-
-        <%= image_tag "lewagon.png", class: "radius" %>
-
-      </li>
+    <ul class="col-lg-6">
+      <li><%= image_tag "pastille-2.svg", class: "radius" %></li>
+      <li><%= image_tag "pastille- 3.svg", class: "radius" %></li>
+      <li><%= image_tag "lewagon.png", class: "radius" %></li>
     </ul>
+  </div>
+  <div class="col-lg-6">
+    <ul>
+      <li><%= image_tag "tsc.jpg", class: "radius" %></li>
+      <li><%= image_tag "conexius.jpg", class: "radius" %></li>
+    </ul>
+
   </div>
 
 </section>
