@@ -1,6 +1,6 @@
 
 
-<section class="center">
+<div class="row center">
 
   <div class="navbar">
     <nav id="menu">
@@ -25,9 +25,9 @@
 
   </div>
 
-</section>
+</div>
 
-<div class="row">
+<div class="row pad">
     <div class="col-lg-6">
       <div class="ct-chart size">
 
@@ -37,14 +37,16 @@
 
     <div class="col-lg-6">
       <h2>I work hard every day to be better!</h2>
-      <div class="colright">
-        <p>La transversalité des nouvelles technologies (usage des drones, Uber, RbnB, ...) nécessite une approche pluridisciplinaire. Comment les nouvelles technologies redistribuent les rapports de force au sein de la société ? Comment changent-elles nos comportements (exemples : voiture électrique, smartphone, gopro,…).</p>
+      <div class="colright text">
+        <p>
  
-        <p>Coder c'est vivre dans son époque. Les robots, les voitures du futur, … sont déjà là. Si on ne peut pas comprendre leur fonctionnement on finit rapidement par vivre hors du monde et c'est là que les « grandes décisions » deviennent hors propos.</p>
+        <p>Coder c'est vivre dans son époque. Les robots, les voitures du futur, … sont déjà là. Si on ne peut pas comprendre leur fonctionnement on finit rapidement par vivre hors du monde et c'est là que les décisions stratégiques deviennent hors propos.</p>
 
         <p>Etant passionné par ces thématiques, il était donc grand temps de me mettre au code!</p>
 
-        <p>Capacité à m'immerger de manière intensive dans la programmation. Venant d'un univers complètement différent et ne disposant d’aucune notion de programmation. Des exercices pratiques à la création de projets à partir de zéro avec pour unique objectif de délivrer dans les temps impartis.</p>
+        <p>C'est pourquoi j'ai suivi une formation intensive de full stack web developer au sein du wagon Bruxelles. J'y ai appris à prototyper une application web et à designer son interface en combinant plusieurs technologies comme le langages Ruby, Html, Css, Javascript et la gestion de base de données Sql. Nous avons travailler suivant les meilleures pratiques de développement web (Workflow MVC et collaboration sur Github, déploiement continu et scalling d'une application web sur Heroku, gestion des photos sur Amazon S3,...).</p>
+
+        <p>Des exercices pratiques à la création de projets à partir de zéro avec pour unique objectif de délivrer dans les temps impartis.</p>
 
       </div>
 
@@ -52,7 +54,7 @@
 
 </div>
 
-<div class="row">
+<div class="row pad">
 
     <div class="col-lg-6">
       <h1>What i can do</h1>
@@ -67,28 +69,53 @@
 
 </div>
 
-<div class="row">
+<div class="row pad">
 
   <div>
     <h1>Mon parcours</h1>
   </div>
 
+  <div class="col-lg-3">
+  <p id="resume" class="wa">Fullstack web developper,
+  Bootcamp developpeur web, prototypage d’application,
+  développement de projets, gestion des ressources.
+  mai-juin 2015, Le wagon</p>
+  <p id="resume" class="ul">Master en sciences politiques
+  finalité spécialisée en relations internationales.
+  2010 - 2012, Ulg</p>
 
-  <div class="columnL">
+  </div>
+    <ul class="col-lg-3" style="text-align:right" >
 
-    <ul class="col-lg-6">
-      <li><%= image_tag "pastille_2.svg", class: "radius" %></li>
-      <li><%= image_tag "pastille_3.svg", class: "radius" %></li>
+      <li><%= image_tag "pastille_2.svg", class: "radius wagon" %>
+
+      </li>
+      <li><%= image_tag "pastille_3.svg", class: "radius ulg" %></li>
       <li><%= image_tag "pastille_4.svg", class: "radius" %></li>
     </ul>
-  </div>
-  <div class="col-lg-6">
-    <ul>
-      <li><%= image_tag "Pastille_5.svg", class: "radius" %></li>
-      <li><%= image_tag "pastille_6.svg", class: "radius" %></li>
-    </ul>
 
-  </div>
+    <ul class="col-lg-3">
+      <li><%= image_tag "Pastille_5.svg", class: "radius tsc" %>
+
+
+      </li>
+      <li><%= image_tag "pastille_6.svg", class: "radius sbs" %>
+
+      </li>
+    </ul>
+    <div class="col-lg-3">
+    <p id="resume" class="ts">The Smart Company
+    Développement de projets, Recherche de financements publics
+    et support de gestion de projets.
+    décembre 2013-janvier 2015, Liège
+    </p>
+    <p id="resume" class="sb">Step by Steppes
+    Création, réalisation et suivi de projets,
+    activité de conseil en octroi de subsides et gestion de projets collaboratifs.
+    septembre 2013, Liège</p>
+
+    </div>
+
 
 </div>
 
@@ -106,7 +133,7 @@
 
 
     var chart = new Chartist.Pie('.ct-chart', {
-    labels: ["open-mind", "perseverance", "perseverance", "maker's spirit"],
+    labels: ["open-mind", "maker's spirit", "creative", "perseverance"],
     series: [20, 10, 30, 40]
     },  {
 
@@ -162,7 +189,6 @@
     }
 
   });
-
 
 
 </script>
