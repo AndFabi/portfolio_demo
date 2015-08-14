@@ -2,22 +2,22 @@ $(document).ready(function() {
 
   $(".wa, .ul, .ts, .sb ").hide();
 
-  $(".wagon").click(function() {
+  $(".wagon").hover(function() {
     $(".wa").fadeToggle('slow/400')
 
   });
 
-  $(".ulg").click(function() {
+  $(".ulg").hover(function() {
     $(".ul").fadeToggle('slow/400')
 
   });
 
-  $(".tsc").click(function() {
+  $(".tsc").hover(function() {
     $(".ts").fadeToggle('slow/400')
 
   });
 
-  $(".sbs").click(function() {
+  $(".sbs").hover(function() {
     $(".sb").fadeToggle('slow/400')
 
   });
