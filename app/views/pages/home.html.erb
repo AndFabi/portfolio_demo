@@ -1,37 +1,40 @@
 
 
-<div class="row center">
+<div id="home" class="row center">
 
-  <div id="home" class="navbar">
+
+  <nav class="navbar navbar-default navbar-fixed-top text-right ">
+  <div class="container">
+    <div  class="nav">
     <ul id="menu">
-      <li><i class="fa fa-map-marker"><a href="#home" class="menuEl" >   Home</a></i></li>
-      <li><i class="fa fa-rocket"><a href="#profil" class="menuEl">   Profil</a></i></li>
-      <li><i class="fa fa-cube"><a href="#compet" class="menuEl">   Compétences</a></i></li>
-      <li><i class="fa fa-check-square-o"><a href="#parcour" class="menuEl">   Parcours</a></i></li>
-
-
-
-
+      <li><a href="#home" class="menuEl text-muted" >Home</a></li>
+      <li><a href="#profil" class="menuEl text-muted">Profil</a></li>
+      <li><a href="#compet" class="menuEl text-muted">Compétences</a></li>
+      <li><a href="#parcour" class="menuEl text-muted">Parcours</a></li>
 
     </ul>
   </div>
+  </div>
+</nav>
+
+
 
   <div  class="welcome">
     <h1 > &lt; id : Andreacola Fabien &gt;</h1>
 
     <h4> &lt; J'aime coder, les nouvelles technologies et la réalisation de projets &gt; </h4>
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="@">
-      <span class="input-group-btn">
-        <button class="btn btn-primary" type="submit">Add me in your team!</button>
-      </span>
-    </div>
+
+    <form class="text-center" method="post" action="mailto:fabiandreacola@gmail.com" >
+    <button class="btn btn-primary btn-lg " type="submit">Add me in your team!</button>
+    </form>
+
+
 
   </div>
 
   <div class="social">
-  <a href="" class="footer"><i class="fa fa-twitter fa-5x"></i></a>
-  <a href="" class="footer"><i class="fa fa-linkedin fa-5x"></i></a>
+  <a href="https://twitter.com/Tarlachh" class="footer"><i class="fa fa-twitter fa-5x"></i></a>
+  <a href="https://be.linkedin.com/in/andreacolafabien" class="footer"><i class="fa fa-linkedin fa-5x"></i></a>
   <a href="https://github.com/AndFabi" class="footer"><i class="fa fa-github fa-5x"></i></a>
 
   </div>
@@ -75,7 +78,7 @@
 
     </div>
 
-    <div class="col-lg-6 placement_svg">
+    <div data-sr='over 1.7s' class="col-lg-6 placement_svg">
       <%= render "competences_svg" %>
 
     </div>
@@ -89,7 +92,7 @@
 
 </div>
 
-<div class="row pad-4">
+<div data-sr class="row pad-4">
 
   <div class="col-lg-3">
   <p class="wa resume text-right">Fullstack web developper,
@@ -101,7 +104,7 @@
   2010 - 2012, Ulg</p>
 
   </div>
-    <ul class="col-lg-3" style="text-align:right" >
+    <ul id="mobile" class="col-lg-3 text-right">
 
       <li><%= image_tag "pastille_2.svg", class: "radius wagon" %></li>
       <li><%= image_tag "pastille_3.svg", class: "radius ulg" %></li>
@@ -140,11 +143,15 @@
   <div class="col-lg-12 text-center">
 
     <h3>Contact</h3>
+
+    <form class="text-center" method="post" action="mailto:fabiandreacola@gmail.com" >
+    <button class="btn btn-primary" type="submit">Add me in your team!</button>
+    </form>
+
     <address  style="
     color:#fff; font-family:Aleo">
     Andreacola Fabien<br>
     Liège, Belgique<br>
-    <a href="mailto:#">fabiandreacola@gmail.com</a><br>
 
     <%= image_tag "fabien.jpg", class: "profil" %>
 
