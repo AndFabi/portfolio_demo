@@ -1,0 +1,218 @@
+
+
+<div class="row center">
+
+  <div id="home" class="navbar">
+    <ul id="menu">
+      <li><i class="fa fa-map-marker"><a href="#home" class="menuEl" >   Home</a></i></li>
+      <li><i class="fa fa-rocket"><a href="#profil" class="menuEl">   Profil</a></i></li>
+      <li><i class="fa fa-cube"><a href="#compet" class="menuEl">   Compétences</a></i></li>
+      <li><i class="fa fa-check-square-o"><a href="#parcour" class="menuEl">   Parcours</a></i></li>
+
+
+
+
+
+    </ul>
+  </div>
+
+  <div  class="welcome">
+    <h1 > &lt; id : Andreacola Fabien &gt;</h1>
+
+    <h4> &lt; J'aime coder, les nouvelles technologies et la réalisation de projets &gt; </h4>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="@">
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="submit">Add me in your team!</button>
+      </span>
+    </div>
+
+  </div>
+
+  <div class="social">
+  <a href="" class="footer"><i class="fa fa-twitter fa-5x"></i></a>
+  <a href="" class="footer"><i class="fa fa-linkedin fa-5x"></i></a>
+  <a href="https://github.com/AndFabi" class="footer"><i class="fa fa-github fa-5x"></i></a>
+
+  </div>
+
+</div>
+
+<div id="profil" class="row pad-1">
+    <div class="col-lg-6">
+      <div class="ct-chart size">
+
+      </div>
+
+    </div>
+
+    <div class="col-lg-6">
+      <h1>I work hard every day to be better!</h1>
+      <div class="colright text">
+        <p>Coder c'est vivre dans son époque. Les robots, les voitures du futur, … sont déjà là. Si on ne peut pas comprendre leur fonctionnement on finit rapidement par vivre hors du monde et c'est là que les décisions stratégiques deviennent hors propos.</p>
+
+        <p>Etant passionné par ces thématiques, il était donc grand temps de me mettre au code!</p>
+
+        <p>C'est pourquoi j'ai suivi une formation intensive de full stack web developer au sein du wagon Bruxelles. J'y ai appris à prototyper une application web et à designer son interface en combinant plusieurs technologies comme le langages Ruby, Html, Css, Javascript et la gestion de base de données Sql.</p>
+
+        <p>Nous avons travailler suivant les meilleures pratiques de développement web (Workflow MVC et collaboration sur Github, déploiement continu et scalling d'une application web sur Heroku, gestion des photos sur Amazon S3,...).</p>
+
+        <p>Des exercices pratiques à la création de projets à partir de zéro avec pour unique objectif de délivrer dans les temps impartis.</p>
+
+      </div>
+
+    </div>
+
+</div>
+
+
+
+<div id="compet" class="row pad-2 colo-mid">
+
+    <div class="col-lg-6">
+      <h1>What i can do</h1>
+      <p class="competence"></p>
+
+    </div>
+
+    <div class="col-lg-6 placement_svg">
+      <%= render "competences_svg" %>
+
+    </div>
+
+
+</div>
+
+<div id="parcour" class="row pad-3">
+
+    <h1>Mon parcours</h1>
+
+</div>
+
+<div class="row pad-4">
+
+  <div class="col-lg-3">
+  <p class="wa resume text-right">Fullstack web developper,
+  Bootcamp developpeur web, prototypage d’application,
+  développement de projets, gestion des ressources.<br>
+  mai-juin 2015, Le wagon</p>
+  <p class="ul resume-in text-right">Master en sciences politiques
+  finalité spécialisée en relations internationales.<br>
+  2010 - 2012, Ulg</p>
+
+  </div>
+    <ul class="col-lg-3" style="text-align:right" >
+
+      <li><%= image_tag "pastille_2.svg", class: "radius wagon" %></li>
+      <li><%= image_tag "pastille_3.svg", class: "radius ulg" %></li>
+
+    </ul>
+
+    <ul class="col-lg-3">
+      <li><%= image_tag "Pastille_5.svg", class: "radius tsc" %>
+
+
+      </li>
+      <li><%= image_tag "pastille_6.svg", class: "radius sbs" %>
+
+      </li>
+    </ul>
+    <div class="col-lg-3">
+    <p class="ts resume">The Smart Company
+    Développement de projets, Recherche de financements publics
+    et support de gestion de projets.<br>
+    décembre 2013-janvier 2015, Liège
+    </p>
+    <p class="sb resume-in">Step by Steppes
+    Création, réalisation et suivi de projets,
+    activité de conseil en octroi de subsides et gestion de projets collaboratifs.<br>
+    septembre 2013, Liège</p>
+
+    </div>
+
+
+</div>
+
+
+
+<div class="row fot">
+
+  <div class="col-lg-12 text-center">
+
+    <h3>Contact</h3>
+    <address  style="
+    color:#fff; font-family:Aleo">
+    Andreacola Fabien<br>
+    Liège, Belgique<br>
+    <a href="mailto:#">fabiandreacola@gmail.com</a><br>
+
+    <%= image_tag "fabien.jpg", class: "profil" %>
+
+</div>
+
+
+<script>
+
+
+
+    var chart = new Chartist.Pie('.ct-chart', {
+    labels: ["open-mind", "maker's spirit", "creative", "perseverance"],
+    series: [20, 10, 30, 40]
+    },  {
+
+      donut: true,
+      donutWidth: 40,
+      chartPadding: 10,
+      labelOffset: 30,
+      labelDirection: 'explode'
+    });
+
+    chart.on('draw', function(data) {
+    if(data.type === 'slice') {
+      // Get the total path length in order to use for dash array animation
+      var pathLength = data.element._node.getTotalLength();
+
+      // Set a dasharray that matches the path length as prerequisite to animate dashoffset
+      data.element.attr({
+        'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+      });
+
+      // Create animation definition while also assigning an ID to the animation for later sync usage
+      var animationDefinition = {
+        'stroke-dashoffset': {
+          id: 'anim' + data.index,
+          dur: 1000,
+          from: -pathLength + 'px',
+          to:  '0px',
+          easing: Chartist.Svg.Easing.easeOutQuint,
+          // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
+          fill: 'freeze'
+        }
+      };
+    if(data.index !== 0) {
+      animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+    }
+
+    // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+    data.element.attr({
+      'stroke-dashoffset': -pathLength + 'px'
+    });
+
+    // We can't use guided mode as the animations need to rely on setting begin manually
+    // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
+    data.element.animate(animationDefinition, false);
+      }
+    });
+
+  // For the sake of the example we update the chart every time it's created with a delay of 8 seconds
+  chart.on('created', function() {
+    if(window.__anim21278907124) {
+      clearTimeout(window.__anim21278907124);
+      window.__anim21278907124 = null;
+    }
+
+  });
+
+
+</script>
+

@@ -1,0 +1,215 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  background-image: url("background_white.png");
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+
+}
+
+p{
+  font-family:Aleo;
+  font-size:18px;
+}
+
+.navbar{
+  width:100%;
+  padding:10px;
+  text-align:end;
+}
+
+.navbar li{
+  display:inline;
+}
+
+
+#index h1{
+  text-align:center;
+  font-family:Aleo;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  font-size:45px;
+  color:#fff;
+  margin-bottom:24px;
+}
+
+#index h2{
+ font-family:Aleo;
+ text-align:center;
+ text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+ font-size:30px
+}
+
+#index h4{
+  text-align:center;
+  font-family:Aleo;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  font-size:20px;
+  color:#fff;
+  margin-bottom:15px;
+}
+
+#index h3{
+  font-family:Aleo;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  font-size:50px;
+  color:#fff;
+}
+
+.text{
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.resume {
+  position:absolute;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.resume-in{
+  margin-top: 12em;
+  margin-bottom: 2em;
+}
+
+#menu{
+  display:inline;
+}
+
+.menuEl{
+  margin-right:0.5em;
+  font-family:Aleo;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  font-size:large;
+}
+
+.center{
+  top:0;
+  width: 100%;
+  height:975px;
+  background-image:url("header_f.svg");
+  background-repeat: no-repeat;
+}
+
+.welcome{
+  position:absolute;
+  top:30%;
+  left:20%;
+  right:20%;
+}
+
+
+
+.social{
+  text-align:center;
+  padding-top: 723px;
+}
+
+.footer{
+  padding:10px;
+}
+
+.colo-mid{
+  background-color:#ffe725;
+}
+
+.placement_svg{
+  padding-top:88px;
+}
+
+.radius{
+  height:180px;
+  width:180px;
+  padding:10px;
+  border-radius: 50%;
+  position: relative;
+  cursor: default;
+  box-shadow:
+    inset 0 0 0 0 rgba(200,95,66, 0.4),
+    inset 0 0 0 16px rgba(255,255,255,0.6),
+    0 1px 2px rgba(0,0,0,0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.radius:hover{
+  box-shadow:
+    inset 0 0 0 110px rgba(200,95,66, 0.4),
+    inset 0 0 0 16px rgba(255,255,255,0.8),
+    0 1px 2px rgba(0,0,0,0.1);
+}
+
+
+.colright{
+  padding:30px;
+  font-family:Aleo;
+  color:#444444;
+}
+
+
+.size{
+  height:550px;
+  margin-top:130px;
+}
+
+.spiral{
+  width:100%;
+  height:520px;
+  padding:50px 0px 50px 0px;
+
+}
+
+
+.compet{
+  height:500px;
+  width:650px;
+
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+
+.profil{
+  width:126px;
+  border-radius:50%;
+
+}
+
+.fot{
+  padding:17px;
+  background:#43484e;
+
+}
+
+.pad-1{
+  padding:30px;
+  padding-bottom:171px;
+}
+
+.pad-2{
+  padding:30px;
+}
+
+.pad-3{
+  margin-top:60px;
+}
+
+.pad-4{
+  margin-top:35px;
+  margin-bottom:50px;
+  padding:30px;
+}
+
+.competence{
+  margin-top:70px;
+}
+
+
