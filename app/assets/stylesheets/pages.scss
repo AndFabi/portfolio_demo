@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  background-image: url("background_white.png");
+  background-image: url("background_white.svg");
   background-attachment:fixed;
   background-position:center;
   background-repeat:no-repeat;
@@ -15,13 +15,15 @@ p{
   font-size:18px;
 }
 
-.navbar{
-  width:100%;
-  padding:10px;
-  text-align:end;
+a:link{
+  text-decoration:none;
 }
 
-.navbar li{
+.nav{
+  padding:10px;
+}
+
+.nav li{
   display:inline;
 }
 
@@ -90,6 +92,7 @@ p{
 }
 
 .center{
+  margin:0;
   top:0;
   width: 100%;
   height:975px;
@@ -108,7 +111,7 @@ p{
 
 .social{
   text-align:center;
-  padding-top: 723px;
+  margin-top: 836px;
 }
 
 .footer{
@@ -172,16 +175,18 @@ p{
 }
 
 
+
 ul{
   list-style-type: none;
 }
 
 
 .profil{
+  margin-top:10px;
   width:126px;
   border-radius:50%;
-
 }
+
 
 .fot{
   padding:17px;
