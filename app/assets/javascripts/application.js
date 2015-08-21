@@ -16,4 +16,7 @@
 //= require_tree .
 //= require bootstrap.min
 //= require scrollReveal.min
-
+//= require chartist
+//= require competence
+//= require resume
+//= require scroll_anim
