@@ -3,22 +3,22 @@ $(document).ready(function() {
   $(".wa, .ul, .ts, .sb ").hide();
 
   $(".wagon").hover(function() {
-    $(".wa").fadeToggle('slow/400')
+    $(".wa").fadeToggle('fast')
 
   });
 
   $(".ulg").hover(function() {
-    $(".ul").fadeToggle('slow/400')
+    $(".ul").fadeToggle('fast')
 
   });
 
   $(".tsc").hover(function() {
-    $(".ts").fadeToggle('slow/400')
+    $(".ts").fadeToggle('fast')
 
   });
 
   $(".sbs").hover(function() {
-    $(".sb").fadeToggle('slow/400')
+    $(".sb").fadeToggle('fast')
 
   });
 

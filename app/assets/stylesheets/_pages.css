@@ -1,13 +1,13 @@
-// Place all the styles related to the pages controller here.
+/*// Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+*/
 body{
-  // background-image: url("background_white.svg");
+ /* // background-image: url("background_white.svg");
   // background-attachment:fixed;
   // background-position:center;
   // background-repeat:no-repeat;
-  background-color:#fff;
+  background-color:#fff;*/
 }
 
 p{
@@ -73,7 +73,7 @@ ul{
   column-gap: 30px;
 }
 
-.resume {
+/*.resume {
   position:absolute;
   margin-top: 2em;
   margin-bottom: 4em;
@@ -82,7 +82,7 @@ ul{
 .resume-in{
   margin-top: 12em;
   margin-bottom: 2em;
-}
+}*/
 
 #menu{
   display:inline;
@@ -201,8 +201,7 @@ ul{
 }
 
 .pad-4{
-  margin-top:35px;
-  margin-bottom:50px;
+  margin:100px;
   padding:30px;
 }
 
