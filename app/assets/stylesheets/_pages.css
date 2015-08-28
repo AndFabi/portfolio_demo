@@ -2,13 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 */
-body{
- /* // background-image: url("background_white.svg");
+/*body{
+  // background-image: url("background_white.svg");
   // background-attachment:fixed;
   // background-position:center;
   // background-repeat:no-repeat;
-  background-color:#fff;*/
-}
+  background-color:#fff;
+}*/
 
 p{
   font-family:Aleo;
@@ -73,17 +73,6 @@ ul{
   column-gap: 30px;
 }
 
-/*.resume {
-  position:absolute;
-  margin-top: 2em;
-  margin-bottom: 4em;
-}
-
-.resume-in{
-  margin-top: 12em;
-  margin-bottom: 2em;
-}*/
-
 #menu{
   display:inline;
 }
@@ -110,7 +99,6 @@ ul{
   left:20%;
   right:20%;
 }
-
 
 .social{
   text-align:center;
@@ -173,18 +161,22 @@ ul{
 .compet{
   height:500px;
   width:650px;
+}
 
+.competence{
+  margin-top:70px;
 }
 
 .profil{
   margin-top:10px;
   width:126px;
   border-radius:50%;
+  border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
 .fot{
   padding:17px;
-  background:#43484e;
+  background:#05de6f;
 }
 
 .pad-1{
@@ -205,8 +197,9 @@ ul{
   padding:30px;
 }
 
-.competence{
-  margin-top:70px;
+.pad-5{
+  margin-bottom: 100px;
 }
+
 
 
