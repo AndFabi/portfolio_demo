@@ -32,7 +32,7 @@ $(document).ready(function() {
   $(document).on('click', function(event) {
     if (!$(event.target).closest('#restartResume').length) {
       $(".resume").fadeToggle('slow', function(){
-        $('.resume').replaceWith('<p class="resume">De la Science Politique au web developement<br>Une approche pluridisciplinaire est essentiel pour comprendre toutes les implications de la "troisième révolution industrielle".<br>La Science Politique me permets de comprendre le contexte d&#39; une problématique et la programmation me permet d&#39; apporter <br> une réponse technique ciblé pour la résoudre.')
+        $('.resume').replaceWith('<p class="resume">De la Science Politique au web developement. <br>Une approche pluridisciplinaire est essentielle pour comprendre toutes les implications de la "troisième révolution industrielle".<br>La Science Politique me permet de comprendre le contexte d&#39; une problématique et la programmation me permet d&#39; apporter <br> une réponse technique ciblée pour la résoudre.')
     });
     }
   });
