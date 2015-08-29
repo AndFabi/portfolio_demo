@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     $(".competence").fadeToggle('slow', function() {
 
-      $(".competence").replaceWith('<p class="competence text-center">Prototyper une application web suivant les meilleurs pratiques de développement web, tout en combinant plusieurs technologies comme le langage Ruby, Javascript et la gestion de base de données Sql.</p>')
+      $(".competence").replaceWith('<p class="competence text-center">Prototyper une application web suivant les meilleurs pratiques de développement web, tout en combinant plusieurs technologies comme les langage Ruby, Javascript et la gestion de bases de données Sql.</p>')
 
     });
 
@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     $(".competence").fadeToggle('slow', function() {
 
-      $(".competence").replaceWith('<p class="competence text-center"> Développement de produits dans les temps impartis.<br> Utilisation des technologies les plus adaptées pour traduire des objectifs stratégiques en un projet livrable et innovant.</p>')
+      $(".competence").replaceWith('<p class="competence text-center"> Développement de produit dans les temps impartis.<br> Utilisation des technologies les plus adaptées pour traduire des objectifs stratégiques en un projet livrable et innovant.</p>')
     });
 
 

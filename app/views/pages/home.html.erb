@@ -1,8 +1,6 @@
 
 
 <div id="home" class="row center">
-
-
   <nav class="navbar navbar-default navbar-fixed-top text-right ">
   <div class="container">
     <div  class="nav">
@@ -17,8 +15,6 @@
   </div>
 </nav>
 
-
-
   <div  class="welcome">
     <h1 > &lt; id : Andreacola Fabien &gt;</h1>
 
@@ -27,51 +23,37 @@
     <form class="text-center" method="post" action="mailto:fabiandreacola@gmail.com" >
     <button class="btn btn-primary btn-lg " type="submit">Add me in your team!</button>
     </form>
-
-
-
   </div>
 
   <div class="social">
-  <a href="https://twitter.com/Tarlachh" class="footer"><i class="fa fa-twitter fa-5x"></i></a>
-  <a href="https://be.linkedin.com/in/andreacolafabien" class="footer"><i class="fa fa-linkedin fa-5x"></i></a>
-  <a href="https://github.com/AndFabi" class="footer"><i class="fa fa-github fa-5x"></i></a>
-
+    <a href="https://twitter.com/Tarlachh" class="footer"><i class="fa fa-twitter fa-5x"></i></a>
+    <a href="https://be.linkedin.com/in/andreacolafabien" class="footer"><i class="fa fa-linkedin fa-5x"></i></a>
+    <a href="https://github.com/AndFabi" class="footer"><i class="fa fa-github fa-5x"></i></a>
   </div>
-
 </div>
 
 <div id="profil" class="row pad-1">
     <div class="col-lg-6">
       <div class="ct-chart size">
-
       </div>
-
     </div>
-
     <div class="col-lg-6">
       <h1>I work hard every day to be better!</h1>
       <div class="colright text">
         <p>Coder c'est vivre dans son époque. Les robots, les voitures du futur, … sont déjà là. Si on ne peut pas comprendre leur fonctionnement on finit rapidement par vivre hors du monde et c'est là que les décisions stratégiques deviennent hors propos.</p>
 
-        <p>Etant passionné par ces thématiques, il était donc grand temps de me mettre au code!</p>
+        <p>Etant passionné par ces thématiques, il était donc grand temps de me mettre au code !</p>
 
-        <p>C'est pourquoi j'ai suivi une formation intensive de full stack web developer au sein du wagon Bruxelles. J'y ai appris à prototyper une application web et à designer son interface en combinant plusieurs technologies comme le langages Ruby, Html, Css, Javascript et la gestion de base de données Sql.</p>
+        <p>C'est pourquoi j'ai suivi une formation intensive de full stack web developer au sein du wagon Bruxelles. J'y ai appris à prototyper une application web et à designer son interface en combinant plusieurs technologies comme les langages Ruby, Html, Css, Javascript et la gestion de bases de données Sql.</p>
 
-        <p>Nous avons travailler suivant les meilleures pratiques de développement web (Workflow MVC et collaboration sur Github, déploiement continu et scalling d'une application web sur Heroku, gestion des photos sur Amazon S3,...).</p>
+        <p>Nous avons travaillé suivant les meilleures pratiques de développement web (Workflow MVC et collaboration sur Github, déploiement continu et scalling d'une application web sur Heroku, gestion des photos sur Amazon S3,...).</p>
 
         <p>Des exercices pratiques à la création de projets à partir de zéro avec pour unique objectif de délivrer dans les temps impartis.</p>
-
       </div>
-
     </div>
-
 </div>
 
-
-
 <div id="compet" class="row pad-2 colo-mid">
-
     <div class="col-lg-6">
       <h1>What i can do</h1>
       <p class="competence"></p>
@@ -82,54 +64,29 @@
       <%= render "competences_svg" %>
 
     </div>
-
-
 </div>
 
 <div id="parcour" class="row pad-3">
-
     <h1>Mon parcours</h1>
-
 </div>
 
 <div data-sr class="row pad-4">
-
-
     <div id="mobile" class="col-lg-12 text-center">
-
-      <%= image_tag "pastille_3.svg", class: "radius ulg" %>
-      <%= image_tag "pastille_6.svg", class: "radius sbs" %>
-      <%= image_tag "Pastille_5.svg", class: "radius tsc" %>
-      <%= image_tag "pastille_2.svg", class: "radius wagon"%>
+      <%= image_tag "pastille_2.svg", class: "radius ulg" %>
+      <%= image_tag "Pastille_5.svg", class: "radius sbs" %>
+      <%= image_tag "pastille_6.svg", class: "radius tsc" %>
+      <%= image_tag "pastille_3.svg", class: "radius wagon"%>
     </div>
-
-
 </div>
 
-<div class="row">
+<div class="row pad-5">
 
-  <div class="col-lg-12 text-center">
-  <p class="wa resume">Fullstack web developper,
-  Bootcamp developpeur web, prototypage d’application,
-  développement de projets, gestion des ressources.<br>
-  mai-juin 2015, Le wagon</p>
-  <p class="ul resume-in">Master en sciences politiques
-  finalité spécialisée en relations internationales.<br>
-  2010 - 2012, Ulg</p>
-
-  <p class="ts resume">The Smart Company
-    Développement de projets, Recherche de financements publics
-    et support de gestion de projets.<br>
-    décembre 2013-janvier 2015, Liège
-    </p>
-    <p class="sb resume-in">Step by Steppes
-    Création, réalisation et suivi de projets,
-    activité de conseil en octroi de subsides et gestion de projets collaboratifs.<br>
-    septembre 2013, Liège</p>
-
+  <div id="restartResume" class="col-lg-12 text-center">
+  <p class="resume">De la Science Politique au web developement<br>
+    Une approche pluridisciplinaire est essentiel pour comprendre toutes les implications de la "troisième révolution industrielle".<br>
+    La Science Politique me permets de comprendre le contexte d'une problématique et la programmation me permet d'apporter <br> une réponse technique ciblé pour la résoudre. <!-- Prenez le cas des drones. les questions techniques <br> sont importantes  mais elles occultes bien souvent un "simple" choix de société <br> (doit-on les utiliser?, dans quels cas?, Peuvent-ils être armé?, Peuvent-ils faire feux de manière autonome?,..).<br> En d'autre terme La question est tout simplement celle-la: puis-je permettre à <br>quelqu'un de tué? Car le drone est guidé par des algorythmes <br> (pas par magie) qui sont eux même écrit par un être <br> humain et donc vulnérable à des jugement de valeur à des erreurs de conception, <br> à une vision du monde,... -->
+  </p>
   </div>
-
-
 </div>
 
 
@@ -145,15 +102,13 @@
     <button class="btn btn-primary" type="submit">Add me in your team!</button>
     </form>
 
-    <address  style="
-    color:#fff; font-family:Aleo">
+    <div  style="color:#fff; font-family:Aleo">
     Andreacola Fabien<br>
     Liège, Belgique<br>
-
     <%= image_tag "fabien.jpg", class: "profil" %>
-
+    </div>
+  </div>
 </div>
-
 
 <script>
 
